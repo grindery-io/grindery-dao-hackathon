@@ -50,7 +50,7 @@ In this part of the demo you will learn how to use gPay to request payments and 
     At the time of submission, the latest build of gPay is in the review process for the Chrome WebStore, 
     Therefore you'll need to install the extension manually
     
-    3.1 Download the hackathon build (zip file) from [https://github.com/grindery-io/grindery-dao-hackathon/grindery-pay-2021.12.10-0.3.21](https://github.com/grindery-io/grindery-dao-hackathon/grindery-pay-2021.12.10-0.3.21)
+    3.1 Download the hackathon build (zip file) from [https://drive.google.com/file/d/1EXCdw3UtREkhp1k8pKJoVFI55nFkp0Ru/view?usp=sharing](https://drive.google.com/file/d/1EXCdw3UtREkhp1k8pKJoVFI55nFkp0Ru/view?usp=sharing)
     
     3.2 Unzip the shared downloaded zip file, it will create a directory named "grindery-pay-2021.12.10-0.3.21“
     
@@ -94,3 +94,24 @@ In this part of the demo you will see how to query gMeta to get transactional me
 4. Go to [history](https://gnosis-safe.io/app/rin:0x0384F52f5c240293b0C67DCf32946148d0171d64/transactions/history) of transactions
 
 5. Click on "View Details in Grindery" to see metadata
+
+
+## Development Instructions
+
+This repo contains code for 3 components in 3 directories
+
+### `/grindery-pay`
+
+Here you can find the source code and build instructions for the gPay extension
+
+### `/grindery-utils`
+
+Here you can find the source code and usage instructions for a shared utility library 
+that used by gPay and gWork (and in the future other projects) to publish transaction metadata to IPFS 
+and initiate it's indexing for complex queries.
+
+This utility library has also been published on [npm](https://www.npmjs.com/package/@grindery/utils)
+
+### `/grindery-index`
+Here you can find the source code and deployment instructions for the indexing service which allows other
+components to run complex queries 
