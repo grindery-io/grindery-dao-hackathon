@@ -15,19 +15,14 @@ YARN
 yarn install
 ```
 
-### Development
+### Build
 
-Create a `.env` file and the following 
-
-`MONGODB_URL` - URL of a mongodb database
-
-`REDIS_URL` - URL of a Redis Instance
-
-`IPFS_URL` - An IPFS gateway URL
-
-Run the following command
 ```
-yarn start
+yarn run build
 ```
 
-A server will be started at (http://localhost:5000)[http://localhost:5000]
+### Testing
+
+Run the build command above
+
+Load the `/build` directory as an unpacked extension in chrome
