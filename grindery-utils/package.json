@@ -1,0 +1,40 @@
+{
+  "name": "@grindery/utils",
+  "version": "0.0.3",
+  "description": "Grindery Utilities",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grindery-io/grindery-utils.git"
+  },
+  "keywords": [
+    "grindery"
+  ],
+  "author": {
+    "name": "David Semakula",
+    "email": "tdsemakula@gmail.com",
+    "url": "http://davidsemakula.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grindery-io/grindery-utils/issues"
+  },
+  "homepage": "https://github.com/grindery-io/grindery-utils#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/runtime": "^7.16.3",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "manifest_version": 2,
+  "name": "Grindery Pay (Beta)",
+  "description": "Decentralized Payouts",
+  "version": "0.3.21",
+  "author": "https://grindery.io",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "identity",
+    "notifications",
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_title": "Grindery Pay (Beta)"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gnosis-safe.io/*",
+        "https://*.gnosis-safe.io/*",
+        "https://multisig.harmony.one/*",
+        "https://*.multisig.harmony.one/*",
+        "https://client.aragon.org/*",
+        "https://ipfs.eth.aragon.network/*"
+      ],
+      "all_frames": true,
+      "js": ["meta.js"]
+    }
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+Shift+G",
+        "mac": "Alt+Shift+G",
+        "chromeos": "Alt+Shift+G",
+        "linux": "Alt+Shift+G"
+      }
+    }
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlQTkn0W0qEYy26SXY1e5HlvzzXbh0cL9dCF1WjCBkkmq9KRcdBiWCIjaIJvGZclVkyz+bk8+IB4TkFHIiqkDagJGfNRUlVYhUpIrpW5SX8p7IB+GI0f1Wni3f9b8yBAXyDtojA5Gs0oZBRgztf1XVm8bdUqr0dmYUxY6Cbcpvr+pLxG71YSWbncgflUtxodGutwaw1sw5nif7QlDYgz6R5ySdv5/gPHMoNS3Loz7muSayq59drYoc5uJTt5dTEm8DJBcCf5vIUPCVIabUIm5Jy9c5saty4d10AgfoP40CS81B9zyJM8mqt3SEYJ99SWc+fQcQclEnlUTLveYZjdRZwIDAQAB",
+  "oauth2": {
+    "client_id": "137263933184-jgha1evcg5vost9rhs64nbu6t8ovsifu.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.readonly",
+      "https://www.googleapis.com/auth/spreadsheets"
+    ]
+  },
+  "externally_connectable": {
+    "matches": [
+      "https://metamask.io/*"
+    ],
+    "ids": [
+      "*"
+    ]
+  },
+  "web_accessible_resources": [
+    "index.html"
+  ]
+}
