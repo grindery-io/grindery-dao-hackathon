@@ -1,4 +1,5 @@
 # gPay/gMeta (Grindery)
+DAO Hackathon Submission for gPay/gMeta (Grindery)
 
 [GitHub Repository](https://github.com/grindery-io/grindery-dao-hackathon)
 
