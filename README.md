@@ -77,7 +77,7 @@ In this part of the demo you will learn how to use gPay to request payments and 
 
 10. Create a second payment request for yourself (or somebody else) in gPay
 
-11. Create batch payment and pay it with your wallet, [Gnosis](https://gnosis-safe.io/app/welcome) or (Aragon)[https://client.aragon.org/#/]
+11. Create batch payment and pay it with your wallet, [Gnosis](https://gnosis-safe.io/app/welcome) or [Aragon](https://client.aragon.org/#/)
 
 12. From here you can proceed to Aragon or Gnosis or simply skip to part 2.
 
